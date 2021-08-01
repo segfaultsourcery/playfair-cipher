@@ -2,7 +2,7 @@ use std::fmt::Display;
 
 use color_eyre::Report;
 use structopt::StructOpt;
-use tracing::{debug, info};
+use tracing::{debug};
 use tracing_subscriber::EnvFilter;
 
 fn main() -> Result<(), Report> {
@@ -23,7 +23,7 @@ fn main() -> Result<(), Report> {
         }
     };
 
-    info!("result = {:?}", result.pairs_to_string());
+    println!("{}", result.pairs_to_string());
 
     Ok(())
 }
