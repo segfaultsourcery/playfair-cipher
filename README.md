@@ -30,7 +30,8 @@ I'd say it works!
 ### Decode
 
 ```bash
-playfair --ignore-char j decipher --key death "ME IK QO TX CQ TE ZX CO MW QC TE HN FB IK ME HA KR QC UN GI KM AV"
+playfair --ignore-char j decipher --key death \
+    "ME IK QO TX CQ TE ZX CO MW QC TE HN FB IK ME HA KR QC UN GI KM AV"
 ```
 
 ```
@@ -40,7 +41,8 @@ LA BO UL AY EL AD YW IL LX LE AD TO CI BO LA TE MP LE SO FG OL DX
 ### Encode
 
 ```bash
-playfair --ignore-char j encipher --key death "LABOULAYE LADY WILL LEAD TO CIBOLA TEMPLES OF GOLD"
+playfair --ignore-char j encipher --key death \
+    "LABOULAYE LADY WILL LEAD TO CIBOLA TEMPLES OF GOLD"
 ```
 
 ```
@@ -54,7 +56,8 @@ Use the `-d` or `--debug` flag.
 Here's a command using the `--debug` flag, and the output.
 
 ```bash
-playfair --debug --ignore-char j decipher --key death "ME IK QO TX CQ TE ZX CO MW QC TE HN FB IK ME HA KR QC UN GI KM AV"
+playfair --debug --ignore-char j decipher --key death \
+    "ME IK QO TX CQ TE ZX CO MW QC TE HN FB IK ME HA KR QC UN GI KM AV"
 ```
 
 ```log
